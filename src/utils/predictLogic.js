@@ -18,7 +18,7 @@ function extractCity(collegeName) {
 
 function mapToCoreCategory(category) {
   const cat = category.toUpperCase();
-  if (cat.includes("OPEN")) return "OPEN";
+  if (cat.includes("GOPENH")) return "OPEN";
   if (cat === "EWS") return "EWS";
   if (cat.includes("SEBC")) return "SEBC";
   if (cat.includes("OBC")) return "OBC";
