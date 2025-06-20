@@ -34,7 +34,7 @@ function mapToCoreCategory(category) {
 }
 
 function rateCollegeQuality(collegeName) {
-  const topColleges = ["IIT", "COEP", "VJTI", "ICT", "Walchand", "PCCOE", "Pune Institute of Computer Technology	", "SPIT", "Cummins", "Vishwakarma Institute of Technology", "MIT", "KJ Somaiya", "Sardar Patel", "Fr. Conceicao Rodrigues", "Shivaji University", "Government College of Engineering"];
+  const topColleges = ["IIT", "COEP", "VJTI", "ICT", "Walchand", "PCCOE", "Pune Institute of Computer Technology", "SPIT", "Cummins", "Vishwakarma Institute of Technology", "MIT", "KJ Somaiya", "Sardar Patel", "Fr. Conceicao Rodrigues", "Shivaji University", "Government College of Engineering"];
   const name = collegeName.toLowerCase();
   if (topColleges.some(c => name.includes(c.toLowerCase()))) return 3;
   if (name.includes("government")) return 2;
