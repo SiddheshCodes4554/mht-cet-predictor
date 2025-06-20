@@ -1,0 +1,380 @@
+/* === GLOBAL === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #dbeafe, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: slideUp 0.8s ease-out;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #334155;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-button {
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.hero-button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* === FEATURES === */
+.features-section {
+  background: #f8fafc;
+  padding: 3rem 2rem;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #2563eb;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #475569;
+}
+
+/* === HOW IT WORKS === */
+.how-it-works-section {
+  padding: 3rem 2rem;
+  background: #e0f2fe;
+}
+
+.how-steps {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.how-steps li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.how-steps span {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+}
+
+/* === PREDICTOR STYLES === */
+form {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  padding: 10px;
+  margin-bottom: 16px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* TABLE */
+table {
+  width: 98%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f1f5f9;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.center {
+  text-align: center;
+}
+
+/* === FOOTER === */
+.footer {
+  padding: 2rem;
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* === Responsive === */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .how-steps {
+    padding: 0 1rem;
+  }
+
+  .how-steps li {
+    font-size: 1rem;
+  }
+
+  .how-steps span {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 1.5rem;
+  }
+
+  .feature-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+table + div button {
+  padding: 8px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+table + div button:hover {
+  background: #1e40af;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+
+.badge.gold {
+  background-color: #facc15;
+  color: #1e293b;
+}
+
+.badge.silver {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.badge.bronze {
+  background-color: #daa90a;
+  color: #1e293b;
+}
+
+.badge {
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 12px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.badge.gold {
+  background-color: #facc15;
+  color: #1e293b;
+}
+.badge.silver {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+.badge.bronze {
+  background-color: #fcd34d;
+  color: #1e293b;
+}
+
+
+button {
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover {
+  background-color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    border-collapse: collapse;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0.5rem;
+  }
+
+  table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.9rem;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    color: #374151;
+  }
+
+  .badge {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 0.75rem;
+  }
+}
+.badge {
+  max-width: 50%;
+  word-break: break-word;
+}
