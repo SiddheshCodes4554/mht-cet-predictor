@@ -68,7 +68,7 @@ export default function Home() {
       {/* Footer */}
       <footer>
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} MHT CET College Predictor. Built with ❤️ for aspiring engineers.</p>
+          <p>&copy; {new Date().getFullYear()} MHT CET College Predictor. Built with ❤️ by <a href="https://www.linkedin.com/in/siddhesh-gawade-b77535369/">Siddhesh Arun Gawade.</a></p>
         </div>
       </footer>
     </div>
